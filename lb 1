@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      width: 400px;
+      height: 300px;
+      border-collapse: collapse;
+      margin: 50px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    td {
+      border: 2px solid black;
+      text-align: center;
+      vertical-align: middle;
+      padding: 8px;
+    }
+
+    .top {
+      background-color: gray;
+      color: white;
+      height: 100px;
+    }
+
+    .left {
+      width: 30%;
+    }
+
+    .center {
+      background-color: white;
+      width: 70%;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .photo {
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+      border: 2px solid black;
+      object-fit: cover;
+    }
+
+    .info-text {
+      text-align: left;
+    }
+
+    .info-text strong {
+      display: block;
+      font-size: 14px;
+    }
+
+    .info-text span {
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <td class="top" colspan="2">
+        <div class="user-info">
+          <img src="my_image.jpg" alt="User Photo" class="photo">
+          <div class="info-text">
+            <strong>User Name:</strong> John Doe<br>
+            <strong>ID:</strong> 123456
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">
+        Lab 1<br>Lab 2<br>Lab 3<br>Lab 4<br>Lab 5
+      </td>
+      <td class="center">Center</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
