@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile Website</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: white;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      background-color: gray;
+      color: white;
+      padding: 15px;
+      flex-shrink: 0;
+    }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-right: 20px;
+      border: 2px solid white;
+    }
+
+    .info h1 {
+      font-size: 20px;
+    }
+
+    .info p {
+      font-size: 16px;
+    }
+
+    .main {
+      display: flex;
+      flex: 1; /* fill remaining height */
+      min-height: 0;
+    }
+
+    .sidebar {
+      width: 25%;
+      background: white;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    .divider {
+      width: 2px;
+      background-color: gray;
+    }
+
+    .profile {
+      width: 75%;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 10px;
+      color: brown;
+      font-size: 15px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .sidebar ul li {
+      margin: 10px 0;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: blueviolet;
+      font-weight: bold;
+    }
+
+    .sidebar ul li a:hover {
+      text-decoration: underline red;
+    }
+
+    .profile h2 {
+      color: indianred;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <img src="my_image.jpg" alt="Profile Picture" class="logo">
+      <div class="info">
+        <h1>kenean gashaw</h1>
+        <p>ID: 0479/16</p>
+      </div>
+    </header>
+
+    <div class="main">
+      <nav class="sidebar">
+        <h2>Labs & Assignments</h2>
+        <ul>
+         
+             <li><a href="http://127.0.0.1:5500/fr.html" target="_blank">Lab 1</a></li>
+              <li><a href="http://127.0.0.1:5500/fr1.html" target="_blank">Lab 2</a></li>
+               <li><a href="http://127.0.0.1:5500/home.html" target="_blank">Lab 3</a></li>
+          <li><a href="http://127.0.0.1:5500/azz.html" target="_blank">Lab 4</a></li>
+          
+        </ul>
+      </nav>
+
+      <div class="divider"></div>
+
+      <section class="profile">
+        <h2>My Profile</h2>
+        <p><em>Welcome to my website!</em><br>
+           This section contains details about my assignment.</p>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>
